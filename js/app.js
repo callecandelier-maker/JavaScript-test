@@ -1,12 +1,32 @@
 
 
-const name = 'Lorem Ipsum, Lorem Ipsum,Lorem Ipsum,Lorem ' +
-  '                   Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum, ';
-let number = 43;
-number = 39;
+const name = `Lorem Ipsum, Lorem Ipsum,Lorem Ipsum,Lorem <br>
+                     Ipsum,Lorem Ipsum,Lorem Ipsum,Lorem Ipsum`;
 
 document.querySelector('.txt').innerHTML = name;
 
-console.log(`Hej jag heter ${name}
-och jag är ${number} år`);
-console.log("Hello World!");
+
+
+const buttonElement = document.querySelector('.btn');
+buttonElement.addEventListener('click', buttonClick);
+
+function buttonClick() {
+
+  if(buttonElement.innerText === 'Hej') {
+    buttonElement.innerText = 'Hej Då!';
+  }
+  else{
+    buttonElement.innerText = 'Hej';
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
