@@ -6,7 +6,6 @@ const name = `Lorem Ipsum, Lorem Ipsum,Lorem Ipsum,Lorem <br>
 document.querySelector('.txt').innerHTML = name;
 
 
-
 const buttonElement = document.querySelector('.btn');
 buttonElement.addEventListener('click', buttonClick);
 
@@ -47,6 +46,7 @@ function addTodo() {
   todoList.push(name);
   console.log(todoList);
   renderTodoList();
+
 }
 
 
